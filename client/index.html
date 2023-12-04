@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Welcome to the main page!</h2>
+      </div>
+      <div class="content">
+        <form action="" id="form">
+          <div class="data-container">
+            <div class="data">
+              <label for="username">Username:</label>
+              <input id="username" value="User123" disabled />
+
+              <label for="password">Password:</label>
+              <input id="password" type="password" value="yourpassword123" disabled />
+            </div>
+
+            <div class="data">
+              <label for="fullname">Fullname:</label>
+              <input id="fullname" value="John Doe" disabled />
+
+              <label for="group">Group:</label>
+              <input id="group" value="TR-01" disabled />
+
+              <label for="idcard">ID Card Number:</label>
+              <input id="idcard" value="AB №123456" disabled />
+              
+              <label for="birthdate">Date of Birth:</label>
+              <input id="birthdate" value="01.01.2000" disabled />
+
+              <label for="email">Email:</label>
+              <input id="email" value="johndoe@gmail.com" disabled />
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button id="edit-button">Edit data</button>
+            <button id="save-button" disabled>Save data</button>
+            <button id="delete-button">Delete account</button>
+            <button id="logout-button">Logout</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin's Page</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Admin's Page</p>
+        <button id="button-account">Account</button>
+      </div>
+      <div class="content">
+        <table class="user-table">
+          <thead>
+            <tr>
+              <th>User's tag</th>
+              <th>Email</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="user-table-body">
+            <tr class="user-data">
+              <td><span class="users-tag">ralph007</span></td>
+              <td><span class="users-mail">ralph2007@gmail.com</span></td>
+              <td class="td-button">
+                <button class="button-admin" onclick="">Promote to Admin</button>
+              </td>
+              <td class="td-button">
+                <button class="button-delete" onclick="">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

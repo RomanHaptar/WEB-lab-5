@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="css/authForms.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-header">
+        <h1>Register</h1>
+      </div>
+      <div class="container-form">
+        <form method="post" id="register-form">
+          <div class="form-inputs">
+            <div class="column">
+              <div class="input-div">
+                <h3>Username:</h3>
+                <div class="tooltip">
+                  <input
+                    id="register-username"
+                    type="text"
+                    name="username"
+                    placeholder="Create your username"
+                    maxlength="20"
+                  />
+                  <span class="tooltip-text"
+                    >Username is 8-20 characters long. No _ or . at the beginning, no __
+                    or _. or ._ or .. inside, no _ or . at the end. Allowed alphanumeric
+                    characters, underscore and dot. Examples: user_name, user.name,
+                    user1.name4, user9_9_name.</span
+                  >
+                </div>
+              </div>
+
+              <div class="input-div">
+                <h3>Password:</h3>
+                <div class="tooltip">
+                  <input
+                    id="register-password"
+                    type="password"
+                    name="password"
+                    placeholder="Create your password"
+                    class="password"
+                    maxlength="20"
+                  />
+                  <span class="tooltip-text"
+                    >At least 8 characters. Contains digits, letters, one uppercase and
+                    lowercase letter and special character. If you want to confirm changes
+                    write your current password or change to a new one.
+                  </span>
+                </div>
+              </div>
+
+              <div class="input-div">
+                <h3>Confirm password:</h3>
+                <input
+                  id="confirm-password"
+                  type="password"
+                  name="confirm-password"
+                  placeholder="Confirm your password"
+                  class="password-confirm"
+                  maxlength="20"
+                />
+                <div class="show-password">
+                  <input
+                    type="checkbox"
+                    onclick="showPasswords()"
+                    class="pass-checkbox"
+                  />Show passwords
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="input-div">
+                <h3>Fullname:</h3>
+                <input
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  placeholder="Example: John Doe"
+                  maxlength="40"
+                />
+              </div>
+
+              <div class="input-div">
+                <h3>Group:</h3>
+                <input
+                  id="group"
+                  type="text"
+                  name="group"
+                  placeholder="Example: TR-01"
+                  maxlength="5"
+                />
+              </div>
+
+              <div class="input-div">
+                <h3>ID Card Number:</h3>
+                <input
+                  id="idcard"
+                  type="text"
+                  name="idcard"
+                  placeholder="Example: AB №123456"
+                  maxlength="10"
+                />
+              </div>
+              
+              <div class="input-div">
+                <h3>Date of Birth:</h3>
+                <input
+                  id="birthdate"
+                  type="text"
+                  name="birthdate"
+                  placeholder="Example: 01.01.2000"
+                  maxlength="10"
+                />
+              </div>
+
+              <div class="input-div">
+                <h3>Email:</h3>
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  placeholder="Example: qwerty@gmail.com"
+                  maxlength="40"
+                />
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="button" value="Register" id="register-button" />
+          <div class="goto-auth">
+            <a href="login.html">Already have an account?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>

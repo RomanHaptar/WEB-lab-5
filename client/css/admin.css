@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Arial", sans-serif;
+  color: var(--secondary-color);
+  background-color: #ecf0f1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+}
+
+.header {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 100%;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* User's table */
+.user-table {
+  display: table;
+  width: 65%;
+  border-collapse: separate;
+  border-spacing: 5px 0;
+}
+
+.user-table tbody,
+.user-table thead {
+  display: table-row-group;
+  width: 100%;
+}
+
+.user-table tr {
+  display: table-row;
+  border-spacing: 0 5px;
+  width: 100%;
+}
+
+.user-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.user-table td {
+  border: 1px solid #999999;
+  display: table-cell;
+  padding: 10px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+.td-button {
+  background: none !important;
+  border: none !important;
+  text-align: center;
+}
+
+.user-table button {
+  width: 75%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.user-table button[disabled] {
+  background: #999999;
+  cursor: not-allowed;
+}
+
+#button-account {
+  width: 80%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 4px;
+}
